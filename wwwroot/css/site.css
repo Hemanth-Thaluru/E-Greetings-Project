@@ -82,8 +82,9 @@ body {
     color: #9AD3D7;
 }
 
-
-
+.myc{
+    background-color:#9AD3D7;
+}
 
 
 
@@ -93,3 +94,57 @@ body {
 
 
 
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-menu li
+
+{
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu > li:hover {
+    background-color: #f1f1f1
+}
+
+    .dropdown-menu > li:hover > .submenu {
+        display: block;
+    }
+
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+}
+/* ============ small devices .end// ============ */
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+#cssmenu, #cssmenu ul {
+    line-height: 1;
+    list-style: none outside none;
+    padding: 0;
+    z-index: 1000;
+}

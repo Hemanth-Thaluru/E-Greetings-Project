@@ -6,71 +6,127 @@
     <title>@ViewData["Title"] - Dotnetcore_Web</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Website Template</title>
+    <!-- links to the css page and bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    
+
 </head>
-<body style="margin-bottom:0px">
+<body style="margin-bottom:0px;">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="padding-left:5px;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="padding-left:5px; height:84px;">
             <div class="container" style="margin-left:5px;">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABUCAYAAABgIc5dAAAAAXNSR0IArs4c
-                         6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAABnCSURBVHhe7Z2Jd1zVfcevtW/WLstaLMuWJd
-                         mysSElNAkpcSCHQEibpgmQECAkKaQQCP1Dek6ThrilCQkkbZKmSVkOZSklPS0hAUIAb7IWa7O1WJutfZfc3+f33pVH45
-                         nRaDTzZgzz9RnP6M3Me/f97vf+tvu7d7ZcFJgkkogyUtznJJKIKpLESiImSBIriZggbsRKunbvb8TNef/uuydMYWaG2Z
-                         qebmoK8kx1bq7ZnpvjvpvElY64EKt7YtI809FtstPSzIpcftl98Hp7TrZpKCo09YX5Jj8jw/1GElca4kKsp093mXMzs
-                         yYtZa0lpikr0pqliytmcWXF5KSmmgOlxeZQWYnJE82WxJWDuBDr+8eaTfqWLWaLPEIBDbYkBJtfXjGlWZlKMB5JJD48
-                         J9bZySnza9FYuRvUQJjKRSEY2uya0hJzfdV2k+6n8ZJIHHhOrJd7ek3H+ETEpKC5mEkemMkbqytNyjqaLwnv4TmxnjrV
-                         ZuaWljdNBkuwZWn9teWl5mMV5e47SSQCPLUl+Ezn5+ZNNPQL/lmGOPdZqSnm7cFhc+Ros+mfnnbfTSLe8JRYdHxqGE77
-                         RsC5SFukpmwxv2jrNC9197rvJBFPeEqsvqkZJVYsgGnNE4KdHh83/yhR58LKsvtOEvGAp8QamJ6JqaON9soU88jzkaOnz
-                         NmpKfedJLyGp8Qam1/wJIJDK+akpZp/b+syJ0bOu0eT8BKeEmtWosHY08oBWisvPc28fKbPNI9ecI8m4RU8IxYZ9OnFha
-                         g67uuBa20Vcr3Y02taL4y7RxMXc0tLpndyygyIL4q8rmR4lseaFDP4g5MtZmscJpa5xemlRXPv3kZTkp3pHk0cTC0smuc
-                         6e8zAzIxodGfgMf4KRVZVebmmZmuu2bE1b8OzFfGEZ8Q6w1ROe5fJy4iPcMihzS8vm29ffcA9khgYnZ0zT55qE58wbc2k
-                         PN1Cx2jlx8pFncrCb6zMzTV7CgvkOdsUZCbeILHwjFhtY+Pmpe6zmnOKF8jUl2VlmdsbdrtH4o/vHT1pMoRQ/kENA4Ejvq4Dx3hwH3RamrxXkZtj6gryVbOVZmc5H0wAeEasU+fHzH+LI50loy6emFpcNJ/bXWt2F2x1j8QPxyVi/Z/e/ssG
-                         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
-                         Jg6+bxD2uZRv3KkoMQ6PzdnficqsEfU35x8EUbiF1gxrSd4TmvDUhrz5YY6nTZAKP8soyBbiBVu58USjL5DpaXm41XlMigu6iKMjaZE0DoFmemmVqLCuaUV0y5CJ1xHwwQD8pmTaOvufXWmOHP97PZPT7Ur8TknCdea/Dz146INnPNXz/SrdiLfhhRoK31ILdjn62p1uujv3z2uppk+5vkev0TzZXfecv6CeVJG7VNyI0RIXADNw8lUQ7mP9cBnEC6aCRPzxrlBPU6JSLWE+BtxkmMN39uJpFWkBGaEXCdGLujyM2QWilQWVFWFQyrw2d01ZlquQSfTF61iQXCaowW0D+TFtVGzJ9eQi+nAQ7H8xe6d5o6G3XocV8fm6tC6tQHya2vunrm8F7t7zdzKsm4bhIA2MnKDgUb0Ts6o2QA37qjSEfB+giYURegbkRn6f345PDmQJ7quvFQdeYCJer7rjL7eLH5ztt/8qLlVNSLntYRhQntvUaFW3fpWajA9xFQPoP1MXvtjDbE+XC6+kJiB9cfaxkBDmel/tadf/0ZIu/Pzte4oEbCqPOV588MofGB6STeEizKJQJ3aUYfIpEreHhrWvyNBt/jMj7130jSLlcKcoWWt2UNrPXCg0dxUU+V++hJ6p6aUJ472TDXlASLjNRyivJVVLZGYg/VASNo6PmZmZBSAW3ftUF+BxsUTXD07zREDKt8WyHkBPBj+rYd5MYE/b+swL4s18Q16mN97vW9QBujGVn1zvn9r6zRPd3arluWcDH76A6vCDj5flYAi0MIXIlRdHyqvkRRuTqCE8mVHDovHbzs/mqDhCOLFnrP6N68/WrFNOzOegEe5GU6oPCv3fSlDE1tg0ZjMXQ+v9Q2YI8ebdT7PFuU5mXsnlUGd2HMd4ZtEUkT/dOKUBme4O/jNnI/kZ/XWHPPwof2rc6eBQPadgIxr4ydXBal2uIxY1IKTAY6Fcw2zqRVi8zVAnVFpVpY2NF7AHDFPB6bFXwgn9xQNMPIpGQ6Gvslp3UHn6Mh5NVPITs2U+EEQgv7hb5WpzutNut8MjMGZGZ0iemtwRCNyez4iWu72nr0N4qDXrnvvJEmt1kTD1QUoYgSX6zABEUispg6oWHxaggSLu/buUfVLh8YDXJeJYDC1sCS+S0CRRB1UmO4PoBnIfbFM7penuzS9s9qJmrZZNjdUVZiviMwoCuQcgLqyF4LsssPAISj7WWuH/k0EC3kcF2SLllA/cNU+8d/Ci07PuhEhQCEEGxwBpYgWaSoucjKsUQY3ReT0c/dGAeW3CM1rciFcTAGREBiW8F36MuZA21BjxUIHX1DN8JhoKdIIuUIAa6ZIM1Tk5JhHDjWZa4RQAG1vKx/4HBrwtb5z+p4FiVWccxZsoPX4nAWSzhLf8iMbqE7lW6P4V267sGz0ZSAEHZ5MJUCCWHQ2aphO/E2vEyXiJN5eX2tY6uQlubiSb+EhU1W+wo8VmO46XLXd/cu5LlMnv+sf1GgM+QDMFLh9zy7z+T21l+XGbpM+IoJjgDBJ/YfBIVEGK7psjBIlsvVoPNv5KAqb8uE+x+cX9TvhYnh2Xhx/8UPluwyOUNWkQYkF7mqs05tz1GZ0kSUj6NjwqHlnaET/pljsSw27NTPvFbm4jjWDwIvdcDB1lRJ922Viz3f1qJlalLbgnGunyWcmxRW5pqzEfFPMFJPR
-                         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
-                         RPc2t8AHotOiTeBoA6HftqtGfyHiSgIDmQ3WSNj2yTPzsM60E+YTW+G4JaQ9KPoMNIcYDBsm1jOnu3UTrmh0NoSiU1h18ufipNvCMSKgn7ScVvWc6KSijeFs7X0lAHNHhUn/1IzugZohhGooKIiolGdDxCISYW/MgoxMZbTozTDcuEvgUlzM5luYqjhcVbFmXuq0+ATPd51dTQ4mOhgYH6ss1x11kriEDRELTXJs9ILpkM4fEcdwi3wTmwzJ9JkP+ZLBJZKYaNVOxGPkSJiKoDzXt5abEJiqStYcosEC2fpEA6Kbk3Z/+32graKNiJx3CyoMiDZYhMAmp2S1dZMLSCGnJVsOkVgJU5qVbSrzmPJZm5iDUK/3D5p3hkc0/E900+cL7pdKgKaSIvdIEhabItZmwI8OvTU0LI6js3NJoBA3kcGAYJCQu0ricnhKLLYefKWnT+e9KBshdNUw9woiFMCsUwLz8MGmhE6DxBOeSoXMri5Lkn8sJsDsXWmkYhyywOPLEn4nSRUcnkuG5GdeeoZGhVcaIBV
-                         rLG/ZWaVVlEkER1yG3H1N9Tpt4796JZFhSUXpMeU5SYRG3Jx38NOWdt0Km5xVIsPODNy2a0fAdXpJXI64EgtQA3589HzElQuxBtEfJTGsXEmav/ARd2IBym/YBpESj0SJEhELTjplvuwWnMTGkBDEAkw2/0dHt9Z7U+Ycr+kcxMGsP+bvU/hTxcnkZyRIGGJZsGKFVTPsO77e6p1
-                         oAjEwCcs+CixtuiGMnV6SCI6EI5YFWz6/1jeo00YUp2nOS45Hk2Tcuk6IC6HQkAck2uPnT6JZUPhBRcISy4I1gEdHRk37hXEzJq/5ORJIoJpM3g+XaPY27YT43PKSVqVW5GabgyUlEZWGJBEcCU8sX7DYtWN8Ugv+WSFEqS300hKe1edL4Ma0qkIeEJFnIjsccnZLodQ2mT2PDa4oYvmDVAC+GFWt/ODRuDz7arDs9DSTnZJm8jLSdOMNu4ltErHHFU2sJBIXSTuQRAxgzP8DSFvrhK9wungAAAAASUVORK5CYII=" height="84px" width="150px" />
+
+                    <img src="~/Images/Logo.png" style="height:74px; width:150px; transform:translate(-10px,-30px);" />
 
                 </a>
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #9AD3D7; font-size: 36px;">𝓖𝓻𝓮𝓮𝓽 𝓨𝓸𝓾𝓻 𝓶𝓮𝓮𝓽</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="color: #9AD3D7; font-size: 30px; transform:translateX(-20px); ;">𝓖𝓻𝓮𝓮𝓽 𝓨𝓸𝓾𝓻 𝓶𝓮𝓮𝓽</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="margin-left:15px;">Home</a>
-                        </li>
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Celebrations">Celebrations</a>
-                        </li>
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Festivals">Festivals</a>
+                    <ul class="navbar-nav flex-grow-1" >
+                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';" style="border-radius:10px; transform:translate(-30px,0px)">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="margin-left:0px;">Home</a>
                         </li>
 
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Invitation">Invitations</a>
+                        <li style=" z-index: 1000; list-style: none outside none;">
+                            <div class="row" style="transform:translate(-16px,9px);">
+                                <div class="dropdown col-sm-6 ">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'" style="border:none; color:black; background-color:#fff;">
+                                        Festivals
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Christmas</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Diwali</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Easter</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">EID</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Ganesh Chaturthi</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Others</a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </li>
 
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Cards">Cards</a>
+                        <li style=" z-index: 1000; list-style: none outside none;">
+                            <div class="row" style="transform:translate(-10px,9px)">
+                                <div class="dropdown col-sm-6 ">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'" style="border:none; color:black; background-color:#fff;">
+                                        Celebrations
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Birthday</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">NewYear</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Marriage</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Anniversary</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Other</a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </li>
 
-                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">support</a>
+                        <li style=" z-index: 1000; list-style: none outside none;">
+                            <div class="row" style="transform:translate(-7px,9px)">
+                                <div class="dropdown col-sm-6 ">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'" style="border:none; color:black; background-color:#fff;">
+                                        Cards
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Marriage Invitation Cards</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">House Warming Cards</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Best Wishes Cards</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Speedy Recovery cards</a>
+                                        <a class="dropdown-item" href="#" onMouseOver="this.style.backgroundColor='#9AD3D7'" onMouseOut="this.style.backgroundColor='#fff'">Other cards</a>
+
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+
+                    
+
+
+
+
+
+                        <li class="nav-item" onmouseover="this.style.backgroundColor='#9AD3D7';" onmouseout="this.style.backgroundColor='#fff';" style="border-radius:10px">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy" style="font-weight:500;">support</a>
+                        </li>
+
+                        
+
+
+
+
 
                         <li>
-                            <form class="form-inline">
+                            <form class="form-inline" style="transform:translate(0px,8px)">
                                 <div class="form-group">
                                     <label class="sr-only"></label>
 
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword2" class="sr-only">Password</label>
-                                    <input type="Search" class="form-control" id="inputPassword2" placeholder="Search" style="width:106px; margin-left:30px;">
+                                    <input type="Search" class="form-control" id="inputPassword2" placeholder="Search" style="width:150px; margin-left:30px;">
                                 </div>
 
                             </form>
@@ -88,17 +144,305 @@
             </div>
         </nav>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - 𝖊 𝖌𝖗𝖊𝖊𝖙𝖎𝖓𝖌𝖘 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+
+    @*slider starts*@
+
+
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" style="width:1350px; height:600px;">
+        @*Carousel indicators*@
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        @*Carousel items*@
+        <div class="carousel-inner">
+            <div class="item active">
+                <p style="text-align:center">
+                    <img src="~/Images/S1.jpg" alt="First Slide" style="height:600px; width:900px;">
+                </p>
+
+                <div class="carousel-caption">
+                    <h3>Independence Day</h3>
+                    <p>BLAH</p>
+                </div>
+            </div>
+            <div class="item">
+                <center><img src="~/Images/S2.jpg" alt="Second Slide" style="height:600px; width:1100px"></center>
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="item">
+                <center><img src="~/Images/S4.jpg" alt="Second Slide" style="height:600px; width:1100px"></center>
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        @*Carousel nav*@
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+
+    @*slider ends*@
+
+    <div style="height:30px; width:1440px; background-color:lightyellow;">
+
+    </div>
+
+    <div style="height:120px; width:1440px; background-color:lightyellow;">
+        <br />
+        <h4 style="text-align: center; color:#5861a2;  font-size: 24px; font-weight:bold;">UpComing Festivals ecards</h4>
+        <p style="font-size:18px; color:#5861a2; text-align:center;">Choose a Card and Send to your Dear Ones</p>
+    </div>
+
+    <div style="height:40px; width:1440px; background-color:lightyellow;">
+
+    </div>
+
+    @*cards starts*@
+
+
+
+    <div class="card-group" style="background-color:lightyellow;">
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/Ind2.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Send</a>
+                </div>
+            </div>
         </div>
 
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/Ind3.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" ; border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/Ind4.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" style=" border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/Ind5.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" style=" border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @*cards ends*@
+
+    <div style="height:100px; width:1440px; background-color:lightyellow;">
+        <button class="btn btn-primary " style="transform:translate(620px,40px); border-radius:10px;  border-color:#fff;"> Show All cards</button>
+    </div>
+
+    @*2nd Section starts*@
+
+
+
+
+    <div style="height:120px; width:1440px; background-color:lightyellow;">
+        <br />
+        <h4 style="text-align: center; color:#5861a2;  font-size: 24px; font-weight:bold;">Recent Festivals ecards</h4>
+        <p style="font-size:18px; color:#5861a2; text-align:center;">Choose a Card and Send to your Dear Ones</p>
+    </div>
+    <div style="height:20px; width:1440px; background-color:lightyellow;">
+
+    </div>
+
+
+    @*cards starts*@
+
+
+
+    <div class="card-group" style="background-color:lightyellow;">
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/F1.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">Send</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/F2.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" ; border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/p3.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" style=" border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                    <img src="~/Images/E1.jpg"
+                         class="img-fluid" style="height:250px; width:310px;" />
+                    <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary" style=" border-color:#fff;">Send</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @*cards ends*@
+
+    <div style="height:100px; width:1440px; background-color:lightyellow;">
+        <button class="btn btn-primary " style="transform:translate(620px,40px); border-radius:10px;  border-color:#fff;"> Show All cards</button>
+    </div>
+
+
+
+
+
+
+    @*2nd section ends here*@
 
 
 
@@ -107,179 +451,213 @@
 
 
 
-    </footer>
 
-    <!--<footer class="bg-dark text-center text-white" >-->
+
+
+    <div style="height:100px; width:1450px; background-color:lightyellow;">
+
+
+    </div>
+
+    @*Footer starts*@
+
+
+    <footer class=" text-center text-white " style="background-color:#89bec2;">
         <!-- Grid container -->
-        <!--<div class="container p-4">-->
+        <div class="container p-4" style="background-color:#89bec2;">
             <!-- Section: Social media -->
-            <!--<section class="mb-4">-->
+            <section class="mb-4" style="padding-left:40px;">
                 <!-- Facebook -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-facebook"></i>
+                </a>
 
                 <!-- Twitter -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-twitter"></i>
+                </a>
 
                 <!-- Google -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-google"></i>
-                </a>-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-google"></i>
+                </a>
 
                 <!-- Instagram -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-instagram"></i>
+                </a>
 
                 <!-- Linkedin -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>-->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-linkedin"></i>
+                </a>
 
                 <!-- Github -->
-                <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-github"></i>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fa fa-github"></i>
                 </a>
-            </section>-->
+            </section>
             <!-- Section: Social media -->
             <!-- Section: Form -->
-            <!--<section class="">
-                <form action="">-->
+            <section class="">
+                <form action="">
                     <!--Grid row-->
-                    <!--<div class="row d-flex justify-content-center">-->
+                    <div class="row d-flex justify-content-center">
                         <!--Grid column-->
-                        <!--<div class="col-auto">
-                            <p class="pt-2">
+                        <div class="col-auto">
+                            <p class="pt-2" style="padding-right:0px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="padding-right:40px; width:72px;">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                </svg>
                                 <strong>Sign up for our newsletter</strong>
                             </p>
-                        </div>-->
+                        </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <!--<div class="col-md-5 col-12">-->
+                        <div class="col-md-5 col-12">
                             <!-- Email input -->
-                            <!--<div class="form-outline form-white mb-4">
+                            <div class="form-outline form-white mb-4">
                                 <input type="email" id="form5Example2" class="form-control" />
-                                <label class="form-label" for="form5Example2">Email address</label>
+                                <label class="form-label" for="form5Example2"></label>
                             </div>
-                        </div>-->
+                        </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <!--<div class="col-auto">-->
+                        <div class="col-auto">
                             <!-- Submit button -->
-                            <!--<button type="submit" class="btn btn-outline-light mb-4">
+                            <button type="submit" class="btn btn-outline-light mb-4">
                                 Subscribe
                             </button>
-                        </div>-->
+                        </div>
                         <!--Grid column-->
-                    <!--</div>-->
+                        <p>
+                            <br />
+                        </p>
+                    </div>
                     <!--Grid row-->
-                <!--</form>
-            </section>-->
+                </form>
+            </section>
             <!-- Section: Form -->
             <!-- Section: Text -->
-            
+            <section class="mb-4">
+                <p>
+                    Best Wishes To You On This Happy Moment Of Your Life.
+                </p>
+            </section>
             <!-- Section: Text -->
             <!-- Section: Links -->
-            <!--<section class="">-->
+            <section class="">
                 <!--Grid row-->
-                <!--<div class="row">-->
+                <div class="row">
                     <!--Grid column-->
-                    <!--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                    <div class="col-md-3">
+
+
+                        <ul class="list-unstyled mb-0" style="text-align:left; align-items:center;">
+                            <li>
+                                <a href="#!" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Celebratons</a>
+                            </li>
+                            <li>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Festivals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-3" style="text-align:left; align-items:center;">
+
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="#!" class="text-white">About us</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <br />
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-white">Privacy</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Contact Us</a>
                             </li>
                         </ul>
-                    </div>-->
+                    </div>
                     <!--Grid column-->
                     <!--Grid column-->
-                    <!--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                    <div class="col-md-3" style="text-align:left; align-items:center;">
+
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="#!" class="text-white">Login</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <br />
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-white">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Support</a>
                             </li>
                         </ul>
-                    </div>-->
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <!--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
+                    </div>
+
+                    <div class="col-md-3" style="text-align:left; align-items:center;">
+
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="#!" class="text-white">Link 1</a>
+                                <a href="#!" class="text-white">FAQ</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 2</a>
+                                <br />
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 3</a>
+                                <a href="#!" class="text-white">Unsubscribe</a>
                             </li>
                             <li>
-                                <a href="#!" class="text-white">Link 4</a>
+                                <br />
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Blog</a>
                             </li>
                         </ul>
-                    </div>-->
+                    </div>
                     <!--Grid column-->
                     <!--Grid column-->
-                    <!--<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Links</h5>
-
-                        <ul class="list-unstyled mb-0">
-                            <li>
-                                <a href="#!" class="text-white">Link 1</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 2</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 3</a>
-                            </li>
-                            <li>
-                                <a href="#!" class="text-white">Link 4</a>
-                            </li>
-                        </ul>
-                    </div>-->
                     <!--Grid column-->
-                <!--</div>-->
+                </div>
                 <!--Grid row-->
-            <!--</section>-->
+            </section>
             <!-- Section: Links -->
-        <!--</div>-->
+        </div>
         <!-- Grid container -->
         <!-- Copyright -->
-        <!--<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3" style="background-color: #89bec2;">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>-->
+            <p>Designed And Developed By Group-6</p>
+        </div>
         <!-- Copyright -->
-    <!--</footer>-->
+    </footer>
 
+
+    @*footer ends*@
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

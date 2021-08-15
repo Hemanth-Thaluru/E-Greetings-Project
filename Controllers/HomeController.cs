@@ -58,6 +58,19 @@ namespace Dotnetcore_Web.Controllers
             return View();
         }
 
+        public IActionResult Trial()
+        {
+            return View();
+        }
+        public IActionResult Trial2()
+        {
+            return View();
+        }
+
+        public IActionResult Trial3()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
